@@ -7,6 +7,6 @@ public class DomesticCat extends AbstractCat {
 
     @Override
     public String eat() {
-        return null;
+        return "Purrrrrrr";
     }
 }
