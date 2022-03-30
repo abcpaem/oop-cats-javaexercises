@@ -19,7 +19,7 @@ public class CatTest {
         assertTrue("Cat should be snoozing", domesticCat.isAsleep());
     }
 
-    /*@Test
+    @Test
     public void checkCatCanWakep() {
         Cat domesticCat = new DomesticCat();
         domesticCat.goToSleep();
@@ -27,7 +27,7 @@ public class CatTest {
         assertFalse("Cat should be awake now", domesticCat.isAsleep());
     }
 
-    @Test
+    /*@Test
     public void checkCatSetting() {
         Cat domesticCat = new DomesticCat();
         assertEquals("domestic", domesticCat.getSetting());

@@ -16,4 +16,9 @@ public class AbstractCat implements Cat {
     public void goToSleep() {
         isAsleep = true;
     }
+
+    @Override
+    public void wakeUp() {
+        isAsleep = false;
+    }
 }
