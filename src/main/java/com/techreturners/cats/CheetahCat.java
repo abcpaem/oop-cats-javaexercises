@@ -2,7 +2,7 @@ package com.techreturners.cats;
 
 public class CheetahCat extends AbstractCat {
     public CheetahCat() {
-        super("wild", 1000);
+        super(Cat.WILD, 1000);
     }
 
     @Override
