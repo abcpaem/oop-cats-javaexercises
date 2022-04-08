@@ -1,8 +1,8 @@
 package com.techreturners.cats;
 
-public class LionCat extends AbstractCat {
+public class LionCat extends Cat {
     public LionCat() {
-        super(Cat.WILD, 1100);
+        super(CatBehaviour.WILD, 1100);
     }
 
     @Override

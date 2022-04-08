@@ -1,8 +1,8 @@
 package com.techreturners.cats;
 
-public class CheetahCat extends AbstractCat {
+public class CheetahCat extends Cat {
     public CheetahCat() {
-        super(Cat.WILD, 1000);
+        super(CatBehaviour.WILD, 1000);
     }
 
     @Override

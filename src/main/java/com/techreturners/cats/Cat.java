@@ -1,18 +1,41 @@
 package com.techreturners.cats;
 
-interface Cat {
-    String DOMESTIC = "domestic";
-    String WILD = "wild";
+public abstract class Cat implements CatBehaviour {
+    private boolean isAsleep;
+    private String setting;
+    private int averageHeight;
 
-    boolean isAsleep();
+    public Cat(String setting, int averageHeight) {
+        this.isAsleep = false;
+        this.setting = setting;
+        this.averageHeight = averageHeight;
+    }
 
-    void goToSleep();
+    @Override
+    public boolean isAsleep() {
+        return isAsleep;
+    }
 
-    void wakeUp();
+    @Override
+    public void goToSleep() {
+        isAsleep = true;
+    }
 
-    String getSetting();
+    @Override
+    public void wakeUp() {
+        isAsleep = false;
+    }
 
-    int getAverageHeight();
+    @Override
+    public String getSetting() {
+        return setting;
+    }
 
-    String eat();
+    @Override
+    public int getAverageHeight() {
+        return averageHeight;
+    }
+
+    @Override
+    public abstract String eat();
 }

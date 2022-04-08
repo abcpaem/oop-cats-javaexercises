@@ -2,9 +2,9 @@ package com.techreturners.cats;
 
 import java.util.Random;
 
-public class DomesticCat extends AbstractCat {
+public class DomesticCat extends Cat {
     public DomesticCat() {
-        super(Cat.DOMESTIC, 23);
+        super(CatBehaviour.DOMESTIC, 23);
     }
 
     @Override
