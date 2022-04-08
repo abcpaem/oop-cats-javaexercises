@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class DomesticCat extends Cat {
     public DomesticCat() {
-        super(CatBehaviour.DOMESTIC, 23);
+        super(Setting.DOMESTIC, 23);
     }
 
     @Override

@@ -2,7 +2,7 @@ package com.techreturners.cats;
 
 public class LionCat extends Cat {
     public LionCat() {
-        super(CatBehaviour.WILD, 1100);
+        super(Setting.WILD, 1100);
     }
 
     @Override

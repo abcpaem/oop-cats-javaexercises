@@ -1,8 +1,6 @@
 package com.techreturners.cats;
 
 interface CatBehaviour {
-    String DOMESTIC = "domestic";
-    String WILD = "wild";
 
     boolean isAsleep();
 

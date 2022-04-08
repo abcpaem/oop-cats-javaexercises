@@ -1,11 +1,13 @@
 package com.techreturners.cats;
 
 public abstract class Cat implements CatBehaviour {
+    public enum Setting {DOMESTIC, WILD}
+
     private boolean isAsleep;
-    private String setting;
+    private Setting setting;
     private int averageHeight;
 
-    public Cat(String setting, int averageHeight) {
+    public Cat(Setting setting, int averageHeight) {
         this.isAsleep = false;
         this.setting = setting;
         this.averageHeight = averageHeight;
@@ -28,7 +30,7 @@ public abstract class Cat implements CatBehaviour {
 
     @Override
     public String getSetting() {
-        return setting;
+        return setting.name().toLowerCase();
     }
 
     @Override
