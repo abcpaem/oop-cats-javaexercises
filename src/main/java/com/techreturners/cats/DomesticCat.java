@@ -9,6 +9,11 @@ public class DomesticCat extends Cat {
 
     @Override
     public String eat() {
-        return "Purrrrrrr" + (new Random().nextBoolean() ? " It will do I suppose" : "");
+        return eat(new Random());
+    }
+
+    @Override
+    public String eat(Random random) {
+        return "Purrrrrrr" + (random.nextBoolean() ? " It will do I suppose" : "");
     }
 }

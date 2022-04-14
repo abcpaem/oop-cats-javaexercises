@@ -1,6 +1,9 @@
 package com.techreturners.cats;
 
+import com.techreturners.cats.testhelper.RandomStub;
 import org.junit.Test;
+
+import java.util.Random;
 
 import static org.junit.Assert.*;
 
@@ -62,5 +65,13 @@ public class CatTest {
     public void feedTheCat() {
         CatBehaviour domesticCat = new DomesticCat();
         assertTrue(domesticCat.eat().contains("Purrrrrrr"));
+    }
+
+    @Test
+    public void feedTheCatRandomComment() {
+        Random randomStub = new RandomStub(true);
+        CatBehaviour domesticCat = new DomesticCat();
+
+        assertTrue(domesticCat.eat(randomStub).contains("Purrrrrrr It will do I suppose"));
     }
 }
