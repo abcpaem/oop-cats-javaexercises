@@ -1,7 +1,5 @@
 package com.techreturners.cats;
 
-import java.util.Random;
-
 public abstract class Cat implements CatBehaviour {
     public enum Setting {DOMESTIC, WILD}
 
@@ -42,7 +40,4 @@ public abstract class Cat implements CatBehaviour {
 
     @Override
     public abstract String eat();
-
-    @Override
-    public String eat(Random random) { return this.eat(); };
 }

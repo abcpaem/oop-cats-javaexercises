@@ -15,6 +15,4 @@ interface CatBehaviour {
     int getAverageHeight();
 
     String eat();
-
-    String eat(Random random);
 }

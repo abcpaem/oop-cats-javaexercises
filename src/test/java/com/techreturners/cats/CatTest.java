@@ -70,8 +70,8 @@ public class CatTest {
     @Test
     public void feedTheCatRandomComment() {
         Random randomStub = new RandomStub(true);
-        CatBehaviour domesticCat = new DomesticCat();
+        CatBehaviour domesticCat = new DomesticCat(randomStub);
 
-        assertTrue(domesticCat.eat(randomStub).equals("Purrrrrrr It will do I suppose"));
+        assertTrue(domesticCat.eat().equals("Purrrrrrr It will do I suppose"));
     }
 }
