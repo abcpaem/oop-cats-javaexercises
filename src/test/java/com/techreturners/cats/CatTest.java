@@ -72,6 +72,6 @@ public class CatTest {
         Random randomStub = new RandomStub(true);
         CatBehaviour domesticCat = new DomesticCat();
 
-        assertTrue(domesticCat.eat(randomStub).contains("Purrrrrrr It will do I suppose"));
+        assertTrue(domesticCat.eat(randomStub).equals("Purrrrrrr It will do I suppose"));
     }
 }
